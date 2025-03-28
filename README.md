@@ -14,13 +14,19 @@
 отправки curl запроса http://localhost:5000/ping
 
 Сначала соберем образ:
-```docker build -t flask . ```
+```
+docker build -t flask . 
+```
 
 И запустим контейнер:
-```docker run -p 5000:5000 flask```
+```
+docker run -p 5000:5000 flask
+```
 
 Следующей командой можем проверить работоспособность сервиса:
-```curl http://localhost:5000/ping```
+```
+curl http://localhost:5000/ping
+```
 
 ## Задание 2: Docker compose
 
@@ -33,8 +39,12 @@
 Запустите docker-compose и убедитесь, что сервисы работают корректно.
 
 Соберем образы при помощи docker-compose:
-```docker-compose up --build```
+```
+docker-compose up --build
+```
 
 и далее можем проверить работоспособность Redis, отправив следующий запрос:
-```curl http://localhost:5000/count```
+```
+curl http://localhost:5000/count
+```
 
